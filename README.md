@@ -1,21 +1,119 @@
-<<<<<<< HEAD
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# John Omar Esguerra Portfolio
 
-# Run and deploy your AI Studio app
+A modern, responsive personal portfolio website built with React, TypeScript, and Vite.
 
-This contains everything you need to run your app locally.
+This site presents my background, projects, research, skills, certifications, and professional experience in a clean, interactive format.
 
-View your app in AI Studio: https://ai.studio/apps/85d1509c-b95a-40fe-a158-97c1d2987568
+## Highlights
 
-## Run Locally
+- Responsive single-page portfolio layout
+- Dedicated sections for profile, education, experience, projects, research, and certifications
+- Interactive detail modal for expanded content
+- Contact form section for outreach
+- Smooth, modern UI with animation support
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
+- Lucide React
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Project Structure
+
+```
+.
+|- index.html
+|- package.json
+|- tsconfig.json
+|- vite.config.ts
+|- src/
+|  |- App.tsx
+|  |- main.tsx
+|  |- index.css
+|  |- data.ts
+|  |- types.ts
+|  |- components/
+|     |- ProfileCard.tsx
+|     |- ExperienceTimeline.tsx
+|     |- ProjectsSection.tsx
+|     |- ResearchSection.tsx
+|     |- EducationSection.tsx
+|     |- CertificationsSection.tsx
+|     |- SkillsSection.tsx
+|     |- ContactForm.tsx
+|     |- DetailModal.tsx
+|- img/
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+The app runs on:
+
+`http://localhost:3000`
+
+## Available Scripts
+
+```bash
+npm run dev      # Start Vite development server
+npm run build    # Build production bundle
+npm run preview  # Preview production build locally
+npm run lint     # Type-check with TypeScript
+npm run clean    # Remove build artifacts
+```
+
+## Customization Guide
+
+Update portfolio content in:
+
+- `src/data.ts` for profile details, timeline entries, projects, skills, and research
+- `src/types.ts` for shared data structures
+
+Update visual styling in:
+
+- `src/index.css`
+- individual section components under `src/components/`
+
+Replace images and assets in:
+
+- `img/`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Production files will be generated in the `dist/` directory.
+
+## Deployment Notes
+
+Because this is a Vite static frontend, it can be deployed on:
+
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static web host
+
+## About
+
+This repository contains the source code for the personal portfolio of **John Omar D. Esguerra**, showcasing work as an educator, data analytics practitioner, and information systems professional.
