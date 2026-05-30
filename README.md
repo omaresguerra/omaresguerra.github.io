@@ -61,6 +61,23 @@ This site presents my background, projects, research, skills, certifications, an
 npm install
 ```
 
+### Configure Contact Form (Formspree)
+
+1. Create a form at Formspree and copy your endpoint URL.
+2. Create a local env file from the example:
+
+```bash
+cp .env.example .env.local
+```
+
+3. Set your endpoint in `.env.local`:
+
+```env
+VITE_FORMSPREE_ENDPOINT=https://formspree.io/f/yourformid
+```
+
+For GitHub Pages deployment, add `VITE_FORMSPREE_ENDPOINT` as a repository variable or secret in your GitHub Actions settings so the build can embed it.
+
 ### Run Development Server
 
 ```bash

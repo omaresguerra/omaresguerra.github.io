@@ -3,6 +3,8 @@ import { Send, Mail, Linkedin, Github, Check, Globe } from "lucide-react";
 import { profileData } from "../data";
 
 export default function ContactForm() {
+  const formEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT as string | undefined;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,7 +23,7 @@ export default function ContactForm() {
     "Academic Inquiries",
   ];
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
       setErrorMessage("Please fill all required fields (*) before transmitting.");
@@ -32,8 +34,26 @@ export default function ContactForm() {
     setStatus("submitting");
     setErrorMessage("");
 
-    // Simulate sending network transition
-    setTimeout(() => {
+    if (!formEndpoint) {
+      setStatus("error");
+      setErrorMessage("Contact form is not configured yet. Please use the direct email link instead.");
+      return;
+    }
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send form message");
+      }
+
       setStatus("success");
       setFormData({
         name: "",
@@ -42,7 +62,10 @@ export default function ContactForm() {
         subject: "",
         message: "",
       });
-    }, 1800);
+    } catch {
+      setStatus("error");
+      setErrorMessage("Unable to send your message right now. Please try again or use direct email.");
+    }
   };
 
   return (
@@ -129,7 +152,7 @@ export default function ContactForm() {
                   <span className="font-display font-bold text-zinc-900 dark:text-zinc-50">Message Transmitted Successfully!</span>
                 </div>
                 <p className="font-light text-[11px] text-zinc-600 dark:text-zinc-300">
-                  Thank you for reaching out. A simulation token has logged your message. John Omar will review your collaboration request soon.
+                  Thank you for reaching out. Your message has been sent successfully and will be reviewed soon.
                 </p>
                 <button
                   type="button"

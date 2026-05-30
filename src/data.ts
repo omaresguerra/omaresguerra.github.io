@@ -373,16 +373,16 @@ export const researchData: ResearchItem[] = [
   },
   {
     id: "res-csu-connectivity",
-    title: "CSU-wide Connectivity and ICT Managers and Faculty Retraining Program",
+    title: "CSU-Wide Connectivity and ICT Managers and Faculty Retraining Program",
     agency: "Cagayan State University",
     type: "CHED-IDIG Funded Project",
     year: "2022",
-    contribution: "Supported implementation activities for a CHED-funded initiative focused on connectivity improvement, ICT readiness, and capability-building across CSU campuses, including documentation and coordination support.",
+    contribution: "Supported implementation activities for a CHED-funded initiative focused on connectivity improvement, ICT readiness, and capability-building across 8 CSU campuses, including documentation and coordination support.",
     tags: ["Connectivity", "ICT", "Higher Education", "Capacity Building"]
   },
   {
     id: "res-biznest-ecommerce",
-    title: "CSU-DOST Technology Business Incubator (TBI)",
+    title: "CSU-DOST TBI Business Incubation Zone for Novel and Sustainable Enterprises",
     agency: "Cagayan State University / TBI Team",
     type: "DOST-PCIEERD Funded Project",
     year: "2021",
@@ -391,11 +391,11 @@ export const researchData: ResearchItem[] = [
   },
   {
     id: "res-daremaps",
-    title: "Disaster Resiliency Mapping of Mission-Critical Infrastructures of SUCs in the Philippines",
+    title: "Disaster Resilience Mapping of Mission-Critical Infrastructures of SUCs in the Philippines",
     agency: "Cagayan State University / DAREMAPS Team",
     type: "CHED-DARETO Funded Project",
     year: "2018-2020",
-    contribution: "Assisted in vulnerability and risk assessment activities for mission-critical ICT infrastructure across partner SUCs, contributing to analysis outputs, technical documentation, and presentation materials on disaster resiliency and cyber risk.",
+    contribution: "Assisted in the vulnerability and risk assessment activities for mission-critical ICT infrastructure across 17 partner SUCs in the Philippines, contributing to analysis outputs, technical documentation, and presentation materials on disaster resilience and cyber risk.",
     tags: ["Risk Assessment", "Disaster Resiliency", "ICT Infrastructure", "Cyber Threats"]
   },
   {
