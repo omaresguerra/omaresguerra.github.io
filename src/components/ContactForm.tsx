@@ -3,7 +3,9 @@ import { Send, Mail, Linkedin, Github, Check, Globe } from "lucide-react";
 import { profileData } from "../data";
 
 export default function ContactForm() {
-  const formEndpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT as string | undefined;
+  const formEndpoint =
+    (import.meta.env.VITE_FORMSPREE_ENDPOINT as string | undefined) ||
+    "https://formspree.io/f/xpqnnkkp";
 
   const [formData, setFormData] = useState({
     name: "",
