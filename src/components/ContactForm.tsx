@@ -88,7 +88,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left Column: Direct connections (Static and interactive helper links) */}
         <div className="lg:col-span-4 space-y-5">
-          <div className="rounded-lg border border-zinc-150 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 space-y-3.5 leading-relaxed text-xs">
+          <div className="rounded-lg border border-zinc-300 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 space-y-3.5 leading-relaxed text-xs">
             <h3 className="font-display font-semibold text-zinc-800 dark:text-zinc-200">
               Direct Contact Details
             </h3>

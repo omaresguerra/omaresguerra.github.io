@@ -74,7 +74,7 @@ export default function ProjectsSection({ onSelectProject }: ProjectsSectionProp
               className={`rounded-lg px-2 py-1 text-[10px] font-mono transition-all border cursor-pointer ${
                 selectedCategory === category
                   ? "bg-zinc-900 border-zinc-900 text-white dark:bg-white dark:border-white dark:text-zinc-900 font-medium"
-                  : "bg-zinc-50 border-zinc-150 text-zinc-500 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-400 hover:bg-zinc-100/70 dark:hover:bg-zinc-750 hover:text-zinc-800 dark:hover:text-zinc-200"
+                  : "bg-zinc-50 border-zinc-300 text-zinc-500 dark:bg-zinc-800 dark:border-zinc-900 dark:text-zinc-400 hover:bg-zinc-100/70 dark:hover:bg-zinc-800 hover:text-zinc-800 dark:hover:text-zinc-200"
               }`}
             >
               {category}
@@ -89,7 +89,7 @@ export default function ProjectsSection({ onSelectProject }: ProjectsSectionProp
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group flex flex-col justify-between rounded-xl border border-zinc-150 dark:border-zinc-800 bg-zinc-50/30 dark:bg-zinc-950/20 p-5 transition-all duration-300 hover:border-zinc-300 dark:hover:border-zinc-703 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 hover:shadow-xs leading-relaxed"
+              className="group flex flex-col justify-between rounded-xl border border-zinc-300 dark:border-zinc-800 bg-zinc-50/30 dark:bg-zinc-950/20 p-5 transition-all duration-300 hover:border-zinc-800 dark:hover:border-zinc-500 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 hover:shadow-xs leading-relaxed"
             >
               <div className="space-y-3.5">
                 {/* Meta Category and Tags */}

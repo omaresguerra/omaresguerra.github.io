@@ -45,7 +45,7 @@ export default function CertificationsSection() {
         {filteredCerts.map((cert) => (
           <div
             key={cert.id}
-            className="flex flex-col justify-between rounded-lg border border-zinc-150 dark:border-zinc-800 bg-zinc-50/10 dark:bg-zinc-950/20 p-4 hover:border-zinc-300 dark:hover:border-zinc-700 hover:bg-zinc-50/30 dark:hover:bg-zinc-900/40 transition-all leading-normal"
+            className="flex flex-col justify-between rounded-lg border border-zinc-300 hover:border-zinc-800 dark:border-zinc-800 dark:hover:border-zinc-500 bg-zinc-50/10 dark:bg-zinc-950/20 p-4 hover:bg-zinc-50/30 dark:hover:bg-zinc-900/40 transition-all duration-300 leading-normal"
           >
             <div className="space-y-2.5">
               {/* Award Badge & Issuer */}

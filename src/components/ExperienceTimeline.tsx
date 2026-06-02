@@ -41,7 +41,7 @@ export default function ExperienceTimeline() {
               </span>
 
               {/* Card wrapper */}
-              <div className="rounded-lg border border-zinc-150 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all">
+              <div className="rounded-lg border border-zinc-300 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 hover:border-zinc-800 dark:hover:border-zinc-500 transition-all duration-300">
                 {/* Header info */}
                 <div
                   id={`exp-header-${exp.id}`}

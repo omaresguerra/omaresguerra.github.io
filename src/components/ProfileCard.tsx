@@ -130,7 +130,7 @@ export default function ProfileCard({ onScrollToSection, darkMode }: ProfileCard
               href={profileData.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg border border-zinc-150 dark:border-zinc-800 bg-white dark:bg-zinc-800 px-3 py-2.5 text-xs text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-white transition-colors"
+              className="flex items-center gap-2 rounded-lg border border-zinc-300 dark:border-zinc-800 bg-white dark:bg-zinc-800 px-3 py-2.5 text-xs text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-white transition-colors"
             >
               <Linkedin className="h-4 w-4 text-zinc-400 dark:text-zinc-500" />
               <span className="font-mono">LinkedIn</span>
@@ -140,7 +140,7 @@ export default function ProfileCard({ onScrollToSection, darkMode }: ProfileCard
               href={profileData.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg border border-zinc-150 dark:border-zinc-800 bg-white dark:bg-zinc-800 px-3 py-2.5 text-xs text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-white transition-colors"
+              className="flex items-center gap-2 rounded-lg border border-zinc-300 dark:border-zinc-800 bg-white dark:bg-zinc-800 px-3 py-2.5 text-xs text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:text-zinc-900 dark:hover:text-white transition-colors"
             >
               <Github className="h-4 w-4 text-zinc-400 dark:text-zinc-500" />
               <span className="font-mono">GitHub</span>
@@ -155,23 +155,23 @@ export default function ProfileCard({ onScrollToSection, darkMode }: ProfileCard
           Focus Core
         </h4>
         <div className="flex flex-wrap gap-1.5">
-          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-150 dark:border-zinc-700">
+          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
             <GraduationCap className="h-3 w-3" />
             <span>Educator & Lecturer</span>
           </span>
-          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-150 dark:border-zinc-700">
+          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
             <BarChart3 className="h-3 w-3" />
             <span>Data Practitioner</span>
           </span>
-          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-150 dark:border-zinc-700">
+          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
             <Stethoscope className="h-3 w-3" />
             <span>Health Informatics</span>
           </span>
-          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-150 dark:border-zinc-700">
+          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
             <Zap className="h-3 w-3" />
             <span>Digital Transformation</span>
           </span>
-          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-150 dark:border-zinc-700">
+          <span className="inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
             <TrendingUp className="h-3 w-3" />
             <span>Business Analytics</span>
           </span>

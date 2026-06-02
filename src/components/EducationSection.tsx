@@ -14,7 +14,7 @@ export default function EducationSection() {
         {educationData.map((item) => (
           <div
             key={item.id}
-            className="rounded-lg border border-zinc-150 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 space-y-2.5"
+            className="rounded-lg border border-zinc-300 hover:border-zinc-800 dark:border-zinc-800 dark:hover:border-zinc-500 bg-zinc-50/20 dark:bg-zinc-950/20 p-4 space-y-2.5 transition-all duration-300"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="space-y-1">

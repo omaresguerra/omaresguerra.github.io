@@ -69,8 +69,8 @@ export default function SkillsSection() {
               key={group.category}
               className={`rounded-lg border p-4.5 transition-all duration-300 ${
                 searchTerm && !hasGroupMatches
-                  ? "border-zinc-100 dark:border-zinc-800 opacity-50 scale-[0.98]"
-                  : "border-zinc-150 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 hover:border-zinc-300 dark:hover:border-zinc-700"
+                  ? "border-zinc-300 dark:border-zinc-800 opacity-50 scale-[0.98]"
+                  : "border-zinc-300 dark:border-zinc-800 bg-zinc-50/20 dark:bg-zinc-950/20 hover:border-zinc-800 dark:hover:border-zinc-700"
               }`}
             >
               {/* Category Title with respective Icon */}

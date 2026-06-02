@@ -29,7 +29,7 @@ export default function ResearchSection() {
           return (
             <div
               key={paper.id}
-              className="group rounded-lg border border-zinc-150 dark:border-zinc-800 bg-zinc-50/10 dark:bg-zinc-950/20 p-5 hover:bg-zinc-50/30 dark:hover:bg-zinc-900/30 transition-all leading-relaxed"
+              className="group rounded-lg border border-zinc-300 hover:border-zinc-800 dark:border-zinc-800 dark:hover:border-zinc-500 bg-zinc-50/10 dark:bg-zinc-950/20 p-5 hover:bg-zinc-50/30 dark:hover:bg-zinc-900/30 transition-all duration-300 leading-relaxed"
             >
               {/* Publication Header */}
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3">
